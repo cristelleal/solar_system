@@ -1,0 +1,131 @@
+:root {
+  /*------------------------------------------------------------
+    |
+    | - COLOR
+    |
+    ------------------------------------------------------------*/
+
+  /* COLOR PALETTE */
+
+  --color-n-000: white;
+  --color-n-050: grey;
+  --color-n-0100: black;
+  --color-background-grey: rgba(128, 128, 128, 0.5);
+  --color-background-darkgrey: rgba(128, 128, 128, 0.3);
+
+  /*------------------------------------------------------------
+    |
+    | - TYPOGRAPHY
+    |
+    ------------------------------------------------------------*/
+
+  --typography-typeface: "Montserrat", sans-serif;
+
+  /* FONT SIZE */
+
+  --typography-h1: 2.5rem;
+
+  /* PADDING */
+
+  --padding-regular-button: 1% 1% 1% 0.5%;
+  --padding-large-button: 1% 8% 1% 0.5%;
+}
+
+/*--------------------------------------------------------------
+   - FOUNDATION
+--------------------------------------------------------------*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+::selection {
+  background-color: var(--color-n-000);
+  color: var(--color-n-050);
+}
+
+body {
+  color: var(--color-n-000);
+  font-family: var(--typography-typeface);
+  text-align: center;
+  background-image: url(../images/galaxy.gif);
+  overflow: hidden;
+}
+
+/*--------------------------------------------------------------
+   - COMPONENTS
+--------------------------------------------------------------*/
+
+#mass {
+  color: var(--color-n-050);
+  margin-top: 2.5rem;
+  padding: var(--padding-large-button);
+}
+
+header {
+  margin: 3%;
+}
+
+h1 {
+  color: var(--color-n-000);
+  font-size: var(--typography-h1);
+  letter-spacing: 5px;
+  text-shadow: rgb(172, 172, 172) 2px 2px 0px;
+}
+
+#select {
+  padding: var(--padding-regular-button);
+  margin-left: 0.25rem;
+  color: var(--color-n-050);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+option {
+  color: var(--color-n-050);
+}
+
+button {
+  background: var(--color-background-grey);
+  padding: var(--padding-regular-button);
+  margin-left: 0.25rem;
+  border: 1px solid var(--color-background-grey);
+  color: var(--color-n-000);
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: var(--color-background-darkgrey);
+  cursor: pointer;
+}
+
+.flex-container {
+  background: var(--color-background-darkgrey);
+  padding: 1.5%;
+  margin: 0px 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+.planet-image {
+  height: 380px;
+  width: 380px;
+}
+
+p {
+  margin: 0 0 3rem 0;
+}
+
+span {
+  font-weight: bold;
+  background-color: var(--color-background-darkgrey);
+  padding: 2.5rem;
+  clip-path: ellipse(35% 50%);
+}
