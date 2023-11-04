@@ -1,35 +1,4 @@
-:root {
-  /*------------------------------------------------------------
-    |
-    | - COLOR
-    |
-    ------------------------------------------------------------*/
-
-  /* COLOR PALETTE */
-
-  --color-n-000: white;
-  --color-n-050: grey;
-  --color-n-0100: black;
-  --color-background-grey: rgba(128, 128, 128, 0.5);
-  --color-background-darkgrey: rgba(128, 128, 128, 0.3);
-
-  /*------------------------------------------------------------
-    |
-    | - TYPOGRAPHY
-    |
-    ------------------------------------------------------------*/
-
-  --typography-typeface: "Montserrat", sans-serif;
-
-  /* FONT SIZE */
-
-  --typography-h1: 2.5rem;
-
-  /* PADDING */
-
-  --padding-regular-button: 1% 1% 1% 0.5%;
-  --padding-large-button: 1% 8% 1% 0.5%;
-}
+@import url('variables.css');
 
 /*--------------------------------------------------------------
    - FOUNDATION
@@ -55,7 +24,6 @@ body {
   font-family: var(--typography-typeface);
   text-align: center;
   background-image: url(../images/galaxy.gif);
-  overflow: hidden;
 }
 
 /*--------------------------------------------------------------
@@ -128,4 +96,16 @@ span {
   background-color: var(--color-background-darkgrey);
   padding: 2.5rem;
   clip-path: ellipse(35% 50%);
+}
+
+.description {
+  background: rgba(128, 128, 128, 0.3);
+  color: var(--color-n-000);
+  padding: 2%;
+  margin: 0 22% 0 22%;
+  font-size: 20px;
+}
+
+.description-hidden {
+  display: none;
 }

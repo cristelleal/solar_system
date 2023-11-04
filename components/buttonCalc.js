@@ -12,7 +12,7 @@ export function calc() {
       const massInKilograms = input().value;
       const planetSelect = selectPlanet();
       const planetGravity = planetSelect.value;
-      const informations = descriptionSection();
+      const informations = descriptionSection(input().value);
       const emptyField = ["", " ", "none", 0];
       const selectedOption = planetSelect.options[planetSelect.selectedIndex];
       const planetName = selectedOption.textContent;
