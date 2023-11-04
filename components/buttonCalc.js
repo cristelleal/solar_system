@@ -2,6 +2,7 @@ import { input } from "../components/massInput.js";
 import { selectPlanet } from "../components/select.js";
 import { descriptionSection } from "../components/description.js";
 import { planetContainer } from "./mainSection.js";
+import { calculateWeightGravity } from "../scripts/utils.js";
 
 export function calc() {
   const button = document.querySelector("button");
@@ -11,7 +12,6 @@ export function calc() {
       const massInKilograms = input().value;
       const planetSelect = selectPlanet();
       const planetGravity = planetSelect.value;
-      const earthGravity = 9.81;
       const informations = descriptionSection();
       const emptyField = ["", " ", "none", 0];
       const selectedOption = planetSelect.options[planetSelect.selectedIndex];
@@ -37,11 +37,10 @@ export function calc() {
         throw new Error();
       }
 
-      const weight = (massInKilograms * planetGravity) / earthGravity;
-      const result = (weight * earthGravity).toFixed(2);
+      const weight = calculateWeightGravity();
 
       informations.innerHTML = `<p>The weight of the object on <b>${planetName}</b></p>
-      <span>${result} N</span>`;
+      <span>${weight} N</span>`;
       informations.style.margin = "15% 5% 15% 5%";
       informations.style.padding = "5%";
 
