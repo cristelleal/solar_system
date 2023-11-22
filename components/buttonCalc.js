@@ -1,8 +1,8 @@
-import input from './massInput.js';
-import selectPlanet from './select.js';
-import descriptionSection from './description.js';
-import planetContainer from './mainSection.js';
-import calculateWeightGravity from '../scripts/utils.js';
+import input from './massInput';
+import selectPlanet from './select';
+import descriptionSection from './description';
+import planetContainer from './mainSection';
+import calculateWeightGravity from '../scripts/utils';
 
 export default function calc() {
   const button = document.querySelector('button');

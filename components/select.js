@@ -1,4 +1,4 @@
-import { planets } from '../scripts/constants.js';
+import { planets } from '../scripts/constants';
 
 export default function selectPlanet() {
   const select = document.getElementById('select');

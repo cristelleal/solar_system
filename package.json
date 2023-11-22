@@ -6,13 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "eslint:verify": "eslint . --ext .js",
-    "eslint:fix": "eslint . --ext .js --fix"
+    "eslint:fix": "eslint . --ext .js --fix",
+    "start": "parcel index.html"
   },
   "author": "Cris",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.54.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.29.0"
+    "eslint-plugin-import": "^2.29.0",
+    "parcel": "^2.10.3"
   }
 }
