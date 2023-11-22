@@ -1,7 +1,7 @@
-import { input } from "../components/massInput.js";
-import { selectPlanet } from "../components/select.js";
+import input from '../components/massInput';
+import selectPlanet from '../components/select';
 
-export function calculateWeightGravity() {
+export default function calculateWeightGravity() {
   const massInKilograms = input().value;
   const earthGravity = 9.81;
   const planetSelect = selectPlanet();
