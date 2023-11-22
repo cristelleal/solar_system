@@ -1,4 +1,4 @@
-export function planetContainer() {
-  const backgroundContainer = document.querySelector(".flex-container");
+export default function planetContainer() {
+  const backgroundContainer = document.querySelector('.flex-container');
   return backgroundContainer;
 }

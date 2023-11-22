@@ -10,3 +10,5 @@ export const planets = {
   Neptune: 11.15,
   Pluto: 0.62,
 };
+
+export default planets;

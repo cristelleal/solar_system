@@ -1,8 +1,8 @@
-export function descriptionSection(descriptionText) {
-  const description = document.querySelector("#description");
+export default function descriptionSection(descriptionText) {
+  const description = document.querySelector('#description');
 
   if (descriptionText) {
-    description.classList.add("description");
+    description.classList.add('description');
   }
 
   return description;
